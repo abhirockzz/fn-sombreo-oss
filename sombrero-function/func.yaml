@@ -1,0 +1,12 @@
+schema_version: 20180708
+name: transform
+version: 0.0.2
+runtime: java
+cmd: com.example.fn.FacesFunctions::handleRequest
+format: http-stream
+memory: 1024
+timeout: 120
+triggers:
+- name: transform
+  type: http
+  source: /transform
